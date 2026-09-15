@@ -1,0 +1,1313 @@
+ID,Process,Subprocess,Failure Mode,Potential Effect,Severity,Occurrence,Detection,RPN,Risk Level,Action Required,Control Point,Confidence,Severity Justification,Occurrence Justification,Detection Justification
+1,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","ESD Strap fails or becomes damaged, causing electrical discharge during inspection","Scratches, bent pins, or missing components on the PCB due to electrical discharge could lead to a failure of the product, resulting in a rework or scrap of the entire production batch.",4,4,2,32,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The effect on product performance is a loss or degradation of primary functions, as scratches, bent pins, or missing components can lead to a failure of the product. Although it may not result in a total loss of all functions, it still poses a significant risk to the product's functionality and reliability.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The qualitative description suggests that failures are high: 'ESD Strap fails or becomes damaged.' This indicates a high likelihood of failure occurring during inspection, which aligns with the occurrence scale criteria.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","Although the defect may not be immediately apparent, it is likely to be detected in the process due to visual inspection. However, the qualitative description also mentions that special processes are involved, which could potentially lead to a higher likelihood of undetected defects. Therefore, I have assigned a moderate detection rating.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+2,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.",PCB Inspection & Prep equipment malfunctions (e.g. Auto-Dispenser D-500 fails to dispense PCB correctly),"Incorrect placement of the PCB could result in damage during subsequent processes, leading to a loss of product performance or functionality.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure of the Auto-Dispenser D-500 to dispense PCB correctly could result in incorrect placement, leading to damage during subsequent processes. This would likely cause a loss of product performance or functionality, as the PCB is a critical component. The severity rating of 4 reflects this potential impact on product performance.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure of the Auto-Dispenser D-500 to dispense PCB correctly is likely to occur occasionally, especially if the equipment is not properly maintained or calibrated. However, it is not certain to happen frequently, and the occurrence rating of 3 reflects a moderate likelihood of this failure mode.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The inspection process for PCBs includes visual checks, which may not detect minor issues such as incorrect placement caused by the malfunctioning Auto-Dispenser D-500. While some defects might be detected through other means, such as sensors or X-ray inspection, it is likely that a significant number of failures would go undetected until they reach the customer. Therefore, the detection rating of 2 reflects the relatively low likelihood of detecting this failure mode before it reaches the customer.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+3,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","Visual Magnifier fails or is misaligned, resulting in incorrect inspection","Inaccurate inspection could lead to missed defects or incorrect acceptance of defective products, affecting product quality and potentially causing rework or scrap.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure of the visual magnifier could lead to inaccurate inspection, which may result in missed defects or incorrect acceptance of defective products. This would affect product quality and potentially cause rework or scrap. The severity rating is 4 because it falls under the category of 'loss or degradation of primary functions' (product_performance), but not to the extent of a total loss of all functions or process line shutdown, which would be rated as 5.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure of the visual magnifier is likely to occur occasionally, as it may be prone to misalignment or failure. However, it's not a certainty that failures will always occur, and the probability is still moderate (less than 10^-4 but greater than 10^-5). Therefore, an occurrence rating of 3 is assigned.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure of the visual magnifier may not be immediately apparent, as it's a component that works behind the scenes. However, if the inspection fails, it will likely be detected in time to prevent significant damage, as the defect would have been caught by the inspector. The semi-quantitative detection rating of greater than 90% suggests that most failures will be detected early on, but not necessarily immediately.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+4,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.",ESD Check fails due to strap resistance > 10MΩ,"Defective products could be shipped out, resulting in customer dissatisfaction and potential recalls.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"This failure mode has a moderate severity because it could lead to customer dissatisfaction and potential recalls. The impact on product performance is not total loss of all functions, but rather a degradation in quality that may still be within specification. However, the potential for defective products being shipped out means that the effect on manufacturing process is significant enough to warrant a severity rating of 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The occurrence likelihood is moderate because ESD checks are regularly performed during the inspection and prep process. However, the failure mode itself (strap resistance > 10MΩ) suggests that there is a potential for frequent failures if not properly addressed. This indicates a moderate likelihood of failure occurring.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection likelihood is low because the ESD mat may mask some defects, and the inspection process may not always detect strap resistance issues. The fact that the defect may not be detected until after shipping out means that there is a relatively high likelihood of undetected failures reaching customers.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+5,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB placement on ESD mat is incorrect, causing excessive pressure or damage to the PCB","Incorrect placement of the PCB could lead to premature wear and tear, reducing its lifespan and affecting product performance.",4,3,1,12,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode is rated as severity 4 because it can cause premature wear and tear, reducing the lifespan of the PCB, which affects product performance. This level of impact on product performance falls under the category of loss or degradation of primary functions.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is rated as occurrence 3 because it is moderately likely to occur due to human error in placing the PCB on the ESD mat. The likelihood of this failure occurring is moderate, but it can happen if the operator is not careful.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","This failure mode is rated as detection 1 because it is highly unlikely that the operator will detect the incorrect placement of the PCB before it causes damage. The defect may be latent or might not appear until after assembly, and it is not verified or is not verifiable (special process).
+
+Criteria for DETECTION=1: Immediately apparent (100% failure mode detection in manufacturing)"
+6,"PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.","PCB Inspection & Prep
+Remove mainboard from ESD shielding bag.
+Inspect PCB for scratches, bent pins, or
+missing components. Place on ESD mat.",Inspection for bent pins fails due to insufficient magnification or angle of view,"Missing defects could result in products being shipped out with damaged components, affecting product quality and potentially causing rework or scrap.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode could result in products being shipped out with damaged components, which would affect product quality. This is a moderate severity because it may lead to loss or degradation of primary functions, but it's not a total loss of all functions. Scraping >30% of the production output might occur if the damage is significant enough.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode could happen occasionally due to insufficient magnification or angle of view. This step in the process has moderate occurrences because it may have happened on similar products, but not frequently enough to be considered very high.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The inspection process might detect some defects that are not visually apparent, such as bent pins, but missing defects could go undetected. This is a moderate detection rating because it's possible that the defect will not be detected in time to prevent the failure effect.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+7,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",Insufficient Thermal Interface Material application,"Reduced heat dissipation, potentially causing overheating and reducing product lifespan.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode is expected to cause a loss or degradation of primary functions, as insufficient thermal interface material application can lead to reduced heat dissipation and potentially cause overheating. This would impact the product's performance, but not necessarily render it unusable. Scraping >30% of production output may occur due to the reduced lifespan of the product.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is expected to occur occasionally, as human error or inconsistent application of thermal interface material can lead to insufficient coverage. This would not be a common occurrence, but it would happen regularly enough to warrant attention.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode may not be immediately apparent, as the effects of insufficient thermal interface material application might not become noticeable until after the product has been assembled and powered on. However, good quality control measures can detect issues with heat dissipation early on, reducing the likelihood of the failure affecting customers.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+8,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",Inconsistent or uneven thermal compound application,"Poor heat transfer, leading to reduced product performance and potentially affecting system reliability.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The severity is rated as 4 because inconsistent or uneven thermal compound application can lead to poor heat transfer, which in turn affects product performance. This could be a primary function failure if it causes overheating, but it might not completely disable the product (hence not a total loss of all functions). Scraping >30% of production output is also possible, making this rating consistent with the scale.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The occurrence rating is 3 because inconsistent thermal compound application may occasionally occur or have occurred on similar products. However, the process step and materials involved suggest that the failure mode could be more frequent than rare or remote. This rating considers the moderate likelihood of this failure occurring.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating is 2 because the defect may not be detected in the process. The stencil S-20 ensures a uniform layer, but the quality control might not verify the exact thickness or consistency of the thermal compound application. This would require specialized testing for verification.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+9,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",Incorrect stencil size or positioning,"Insufficient or excessive thermal compound applied, resulting in inconsistent heat dissipation and potential product failure.",3,4,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of incorrect stencil size or positioning could result in a non-uniform layer of thermal compound, leading to inconsistent heat dissipation. This could cause reduced product performance, but not necessarily total loss of all functions. In this case, the severity is rated as 3 because the impact on product performance is significant (degradation), but not catastrophic.
+
+Criteria for SEVERITY=3: Loss or degradation of secondary functions or reduced reliability but remains within specification.","The failure mode of incorrect stencil size or positioning is considered high because it can occur frequently due to human error or equipment malfunction. The steps involved in applying thermal compound are complex, and small mistakes can lead to significant consequences. This rating is justified by the qualitative description of ""Process step known to have frequent failures.""
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","The detection of incorrect stencil size or positioning before it reaches the customer is not guaranteed. While visual inspection and quality control measures may detect some issues, they may not catch all problems, especially if the defect is subtle. This rating is justified by the semi-quantitative description of ""Poor (25% failure mode detection in manufacturing)"", indicating that there is a moderate likelihood that defects will go undetected.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+10,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",Torque driver misalignment or improper tightening of screws,"Heatsink not properly secured to the board, leading to reduced heat transfer and potentially causing product failure.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"The failure mode could lead to a loss or degradation of primary functions, as the heatsink is not properly secured, potentially causing reduced heat transfer. This could result in product failure, requiring rework or scrap of the affected units. Therefore, the severity rating of 4 is assigned due to the potential impact on product performance and manufacturing.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is a possible occurrence during the process, as improper tightening of screws or misalignment of the torque driver could lead to this issue. However, it is not a guarantee that failures will occur very frequently. Therefore, the occurrence rating of 3 is assigned due to its moderate likelihood.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While a good quality control process would likely detect some issues with the heatsink, it may not be possible to catch all defects in time. The failure mode could lead to reduced heat transfer and product failure before detection. Therefore, the detection rating of 2 is assigned due to its relatively low likelihood.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+11,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",ESD damage to components or equipment,"Reduced component reliability, potentially affecting system performance and requiring costly rework or replacement.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of ESD damage to components or equipment has a moderate impact on product performance. The potential effect of reduced component reliability could lead to system performance issues, but it is not critical to the overall functionality of the product. Scraping >30% of production output is a plausible consequence, but it is not necessarily catastrophic. This rating matches the scale criteria because it falls under the category of 'Loss or degradation of secondary functions' and 'Scrap >30% of the production output'.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The likelihood of ESD damage occurring during the process is moderate. The operation involves handling sensitive components, and static electricity can be a risk factor. However, it is not an extremely high-risk scenario, as the operator has some control over their movements and can take precautions to minimize the risk. This rating matches the scale criteria because it falls under the category of 'Moderate: Failures occasionally occur or have occurred on similar product'.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The likelihood of detecting ESD damage before it reaches the customer is relatively low. While visual inspection can detect some defects, subtle changes in component behavior may not be immediately apparent. Furthermore, the defect may only become apparent after implantation or use, making detection challenging. This rating matches the scale criteria because it falls under the category of 'Defect may not be detected in the process'.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+12,"Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.","Apply Thermal Interface Material
+Dispense 0.5g of thermal compound (Arctic
+Silver) onto the CPU heat spreader. Use
+stencil S-20 to ensure a 0.2mm uniform
+layer.",Incomplete or inaccurate stencil cleaning,"Residual thermal compound on the heatsink, causing inconsistent heat transfer and potential product failure.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The effect of incomplete or inaccurate stencil cleaning is a loss or degradation of primary functions, specifically inconsistent heat transfer and potential product failure. This impact is significant enough to warrant a severity rating of 4, as it could result in scrap production output (>30% of the production output).
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of incomplete or inaccurate stencil cleaning has a moderate likelihood of occurrence, as it is related to a process step that is known to have frequent failures. The qualitative description suggests that this is not a very high or extremely rare occurrence, but rather an occasional event.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode of incomplete or inaccurate stencil cleaning may not be immediately apparent during the manufacturing process, as it is related to a visual inspection step (using stencil S-20). However, with proper testing and quality control measures in place, there is a good chance that the defect will be detected before it reaches the customer. The semi-quantitative detection rating of >60% suggests that the failure mode has a moderate likelihood of being detected.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+13,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Heatsink not flush with board, causing uneven heat dissipation and potentially leading to overheating","Impact on product: Reduced thermal performance, increased risk of component failure. Impact on process: Potential for production line downtime due to rework or replacement of defective units.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode causes reduced thermal performance, which can lead to increased risk of component failure. This impact is significant enough to be classified as a severity rating of 4, as it falls under the category of 'Loss or degradation of primary functions' (product_performance). Additionally, potential production line downtime due to rework or replacement of defective units is a manufacturing process concern, which further supports this severity rating.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is unlikely to occur frequently, as it requires a specific condition (the heatsink not being flush with the board) that may be rare in the manufacturing process. The qualitative description of 'Moderate: Failures occasionally occur or have occurred on similar product' best fits this scenario.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode is likely to be detected during visual inspection, as the heatsink not being flush with the board would be easily noticeable. However, it may take some time for detection and corrective action, which aligns with a semi-quantitative rating of >60%. Therefore, a lower rating (2) is assigned to reflect that detection may not occur immediately.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+14,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Incorrect screw pattern (e.g., 1-3-4 instead of 1-2-3-4), causing structural instability and potentially leading to screws working loose over time","Impact on product: Reduced structural integrity, potential for screw failure or loosening. Impact on process: Potential for increased scrap rates due to screw-related failures.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of incorrect screw pattern could lead to reduced structural integrity, which may result in screw failure or loosening over time. This impact on product performance is rated as severity level 4 because it causes a loss or degradation of primary functions (structural stability). The impact on manufacturing process is also significant, as it may require rework and potentially increase scrap rates due to screw-related failures.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of incorrect screw pattern occurs when the operator misaligns the screws in a cross pattern. This mistake can happen frequently if operators are not paying close attention or have not performed the operation correctly before. However, it is not extremely common (very high) because proper procedures and checks are usually in place to prevent such mistakes.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode of incorrect screw pattern may not be immediately apparent during the manufacturing process. While operators can visually inspect the screws, they might not detect a mistake until after the product is assembled and tested. In some cases, the defect might not be detected at all if it does not affect the product's performance significantly. This suggests that detection is relatively low (good) because the failure mode is not easily identifiable during the manufacturing process.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+15,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Heatsink not properly seated, causing uneven pressure distribution and potentially leading to premature wear on components","Impact on product: Reduced thermal performance, potential for component failure. Impact on process: Potential for production line downtime due to rework or replacement of defective units.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode has a moderate impact on product performance. The uneven pressure distribution caused by an improperly seated heatsink can lead to reduced thermal performance, which may result in component failure. This is not a catastrophic failure, but it can still have significant consequences for the product's overall functionality and reliability. Therefore, a severity rating of 4 is assigned.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The likelihood of this failure occurring is moderate. The process step involves pressing down firmly until flush, which requires some force and attention to detail. However, the potential for human error or equipment malfunction is still present, making it unlikely that this failure will never occur. Therefore, a occurrence rating of 3 is assigned.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The likelihood of detecting this failure before it reaches the customer is relatively low. The heatsink installation process involves multiple steps and may not be visually inspectable, making it difficult to detect defects early on. However, a good manufacturing process should still include visual inspections or other quality control measures that can catch such issues. Therefore, a detection rating of 2 is assigned.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+16,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","ESD damage during installation (e.g., bent pins), causing electrical issues and potentially leading to system failure","Impact on product: Electrical failures, potential for system malfunction. Impact on process: Potential for increased scrap rates due to ESD-related failures.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The severity rating of 4 is assigned because ESD damage can cause electrical issues and potentially lead to system failure, which falls under the 'Loss or degradation of primary functions' category. This type of failure would require significant rework and might result in scrap rates due to the complexity of repairing ESD-related damage.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The occurrence rating of 3 is assigned because while ESD damage can occur during installation, it's not an extremely common issue. The phrase 'potential for' suggests that this could happen, but it's not a certainty. However, the potential impact on product performance and process makes it more likely to occur than a remote/rare failure.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating of 2 is assigned because while ESD damage might be detectable during installation, it's not immediately apparent. The description suggests that the defect could be latent or might not appear until after implant, indicating a moderate likelihood that the defect will not be detected in time to prevent the failure effect.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+17,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Insufficient torque during screw tightening (e.g., 0.2Nm instead of 1.2Nm), causing structural instability and potentially leading to screws working loose over time","Impact on product: Reduced structural integrity, potential for screw failure or loosening. Impact on process: Potential for increased scrap rates due to screw-related failures.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of insufficient torque during screw tightening can cause structural instability and potential for screw failure or loosening. This would result in a loss or degradation of primary functions, as the product's structural integrity is compromised. Furthermore, this could lead to scrap rates due to screw-related failures, which falls under the manufacturing_process category with a severity rating of 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of insufficient torque during screw tightening is moderately likely to occur. This is because the process step involves securing screws in a cross pattern, and if the torque is not sufficient, it could lead to structural instability. However, this is not a guarantee that failures will occur, as other factors such as material quality and manufacturing process consistency can mitigate the risk.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","Detecting insufficient torque during screw tightening before it reaches the customer can be challenging. The defect may not be detected in time to prevent the failure effect, especially if the product is assembled on a production line with high volumes of products being processed. This would result in a semi-quantitative detection value of >60%, indicating that there is a moderate likelihood of detection.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+18,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Heatsink wire routing touching fins, causing electrical interference and potentially leading to system malfunction","Impact on product: Electrical failures, potential for system malfunction. Impact on process: Potential for production line downtime due to rework or replacement of defective units.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode has a potential impact on product performance, specifically electrical failures and system malfunctions. This is rated as severity level 4 because it affects primary functions of the product, but not necessarily total loss of all functions. Additionally, the manufacturing process impact is significant, with potential for production line downtime due to rework or replacement of defective units, which aligns with the manufacturing_process criterion for a severity rating of 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The likelihood of failure occurring is moderate. The description suggests that failures are certain to occur (very high), but this does not necessarily translate directly to occurrence probability. Given the process context and potential impact, this risk falls under a moderate occurrence rating.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection of this failure mode is good, with a high likelihood that the defect will be detected in time. However, it still has some room for improvement as there is a chance the defect might not be detected or may appear until after implant. This aligns with the semi-quantitative criterion for a detection rating of 2.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+19,"Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Install Heatsink
+Align heatsink guide pins with PCB holes.
+Press down firmly until flush. Secure with 4x
+M3 screws in a cross pattern (1-3-2-4).","Heatsink not properly secured, causing it to shift during operation and potentially leading to uneven heat dissipation","Impact on product: Reduced thermal performance, potential for component failure. Impact on process: Potential for production line downtime due to rework or replacement of defective units.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode causes reduced thermal performance, which can lead to component failure. This is a significant impact on product performance. However, it does not result in total loss of all functions or process line shutdown, so the severity rating is 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode occurs when the heatsink is not properly secured, which can happen occasionally due to human error or inadequate inspection. While it may not be certain to occur (qualitative description), it is not extremely rare either. Therefore, the occurrence rating is 3.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode may not be immediately apparent during manufacturing (semi-quantitative: >90%). However, since the defect will most likely be detected in the process (qualitative_2), it does not have a high likelihood of going undetected. The detection rating is 2 because there is some chance that the defect might go unnoticed until after implant.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+20,"Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.","Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.",ESD Strap failure: Insufficient resistance causing electrical shock or damage to sensitive components,"Potential effect on product performance: Reduced CPU fan functionality, or in extreme cases, component damage leading to total loss of primary function. Potential effect on manufacturing process: Process downtime and rework required for affected units",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.6,"The failure mode could result in a loss or degradation of primary functions (reduced CPU fan functionality) or, in extreme cases, total loss of primary function (component damage leading to primary function loss). This aligns with the severity criteria for a rating of 4, which includes product performance impacts (e.g., loss or degradation of primary functions), but excludes process line shutdown. The potential impact on manufacturing is also significant, as it may require process downtime and rework for affected units, which is within the defined scope for this rating.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is described as 'insufficient resistance causing electrical shock or damage to sensitive components.' This suggests that the failure is likely to occur frequently due to the inherent risks associated with ESD (Electrostatic Discharge) and the potential for human error during the assembly process. The moderate likelihood of occurrence aligns with a rating of 3, which indicates a higher probability than the remote/rare category but lower than the very high category.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While it is possible that the failure could be detected before reaching the customer (e.g., through visual inspection or testing), there is an inherent risk of undetected failures due to the nature of the process and potential human error. The semi-quantitative criteria for detection suggest a moderate likelihood that the defect will not be detected in time to prevent the failure effect. A rating of 2 reflects this assessment, indicating a lower probability of detection compared to the good or immediately apparent categories.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+21,"Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.","Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.",Incorrect wire routing: Wire touching heatsink fins,"Potential effect on product performance: Heat buildup affecting CPU fan functionality, potentially leading to reduced lifespan or total failure of the component. Potential effect on manufacturing process: Rework required to correct faulty wiring",4,4,1,16,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The severity of this failure mode is rated as 4 because it can lead to a loss or degradation of primary functions (heat buildup affecting CPU fan functionality), which may result in reduced lifespan or total failure of the component. This is considered a moderate-level impact on product performance, falling under the category of 'Loss or degradation of primary functions'.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is rated as 4 because it is considered to be high in occurrence due to the fact that wire routing errors can occur frequently, especially if the process step is not properly executed (e.g., incorrect wire routing). The qualitative description of 'Moderate: Failures occasionally occur or have occurred on similar product' aligns with this rating.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","The detection of this failure mode is rated as 1 because it is considered to be very low (less than 30% chance of detection) due to the fact that the defect (wire touching heatsink fins) may not be apparent until after implant or assembly, and even then, it may require specialized testing to verify. The semi-quantitative criterion of '<30%' aligns with this rating.
+
+Criteria for DETECTION=1: Immediately apparent (100% failure mode detection in manufacturing)"
+22,"Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.","Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.",Insufficient torque when securing screws,"Potential effect on product performance: Loose connection between the heatsink and the PCB, potentially affecting CPU fan functionality or overall system stability. Potential effect on manufacturing process: Increased risk of rework due to faulty connections",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of insufficient torque when securing screws has a potential effect on product performance that could lead to a loose connection between the heatsink and the PCB, potentially affecting CPU fan functionality or overall system stability. This would result in a loss or degradation of primary functions. The severity rating of 4 matches the scale criteria as it indicates a significant impact on product performance.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is considered to be moderate in terms of occurrence, as it may occasionally occur due to human error or faulty tools. However, it is not extremely rare or remote. The occurrence rating of 3 matches the scale criteria as it indicates a moderate likelihood of the failure occurring.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating of 2 suggests that the defect may not be detected in the process, but rather upon inspection by the customer or during subsequent assembly processes. The locking tab engaging is a critical step in securing the screws, and if it does not, the failure mode would likely go undetected until after assembly. However, the semi-quantitative detection value of >60% indicates that there may be some chance of detection within the process. The detection rating of 2 balances this nuance.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+23,"Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.","Connect Fan Harness
+Plug the 4-pin CPU fan connector into
+header CPU_FAN1. Ensure the locking tab
+engages. Route wire through clip A.",Incorrect antenna connector rotation,"Potential effect on product performance: Reduced antenna signal quality, affecting overall system performance and potentially leading to connectivity issues. Potential effect on manufacturing process: Rework required to correct faulty antenna connections",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of incorrect antenna connector rotation has a moderate impact on product performance, as it can lead to reduced antenna signal quality and potentially affect overall system performance. However, the impact is not catastrophic, and the system may still function albeit with decreased performance. This level of severity corresponds to a rating of 4, which indicates loss or degradation of secondary functions.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of incorrect antenna connector rotation occurs occasionally, as the process step involves connecting multiple components and ensuring proper alignment. While it may not be a frequent occurrence, it is not extremely rare either, which corresponds to a rating of 3, indicating moderate likelihood.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode of incorrect antenna connector rotation may not be immediately apparent during the manufacturing process, as the defect may not be visually noticeable. However, it is likely that the defect will be detected through testing and inspection, which corresponds to a rating of 2, indicating a moderate likelihood of detection.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+24,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Loose or stripped M2 screw,"Potential failure to secure WiFi module, leading to structural integrity issues and possible damage to surrounding components.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of a loose or stripped M2 screw can cause the WiFi module to fail, leading to structural integrity issues. This can result in damage to surrounding components, which is a significant concern for product reliability and customer satisfaction. While it may not be a total loss of all functions (rating 5), the potential impact on product performance is substantial.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is likely to occur occasionally, as the screw can become loose over time due to wear and tear. However, it's not extremely common, as the screw is relatively secure when properly tightened. The qualitative description of 'Moderate' suggests that failures are unlikely but can occur on similar products.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While a loose or stripped M2 screw may be difficult to detect visually during installation, it's likely that the WiFi module will fail before reaching the customer. The semi-quantitative rating of '<30%' suggests that detection is poor, and the qualitative description of 'Poor' indicates that defects are not thoroughly verified. However, some visual inspections or quality control checks might catch the issue early on.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+25,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Insufficient torque during screw tightening,"Possible failure to properly secure WiFi module, leading to reduced performance or communication issues with the device.",4,3,3,36,HIGH,YES,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"The failure mode of insufficient torque during screw tightening has a severity rating of 4 because it can lead to a loss or degradation of primary functions, specifically the reduced performance or communication issues with the device. The WiFi module is secured with a single M2 screw, and if the torque is insufficient, it may not be properly seated, leading to connectivity problems. This could potentially impact the overall product performance, making it a moderate severity issue.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The occurrence rating of 3 is assigned because the failure mode is likely to occur occasionally, but not frequently. The fact that the WiFi module requires only one M2 screw suggests that the process step may have some inherent variability or human error-prone nature, leading to occasional failures. However, it's not a certainty that the failure will occur every time, which is why it's rated as moderate occurrence.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating of 3 is assigned because there is a moderate likelihood that the defect will not be detected in time to prevent the failure effect. The fact that the WiFi module has snap antenna cables that can be easily missed or overlooked during the assembly process suggests that the defect may not be detected until it's too late. However, if the screw is properly tightened, it's likely that the issue will be caught before it reaches the customer.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+26,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Damaged or bent antenna cables,"Reduced antenna signal quality, potentially affecting WiFi connectivity and overall device performance.",4,4,3,48,HIGH,YES,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"The failure mode of damaged or bent antenna cables would have a moderate impact on product performance, specifically reducing antenna signal quality. This could affect WiFi connectivity and overall device performance, but it may not be total loss of all functions. Scraping of more than 30% of the production output is possible, but not certain.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is likely to occur frequently due to human error during installation, as the antenna cables are easily damaged or bent. The qualitative description suggests that failures are high and certain to occur.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","While it's possible that some defects may go undetected, the use of semi-quantitative detection criteria suggests a moderate likelihood of detection. The antenna cables are snapped onto connectors, which implies some level of quality control, but also means that inspection is not always possible.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+27,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Incorrect wire routing or heat sink alignment,"Potential for overheating, which could lead to reduced device lifespan or even failure.",3,4,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The effect of incorrect wire routing or heat sink alignment is a loss or degradation of secondary functions, as it may lead to reduced device lifespan. This matches the scale criteria for severity level 3, which includes loss or degradation of secondary functions.
+
+Criteria for SEVERITY=3: Loss or degradation of secondary functions or reduced reliability but remains within specification.","The process step described involves handling delicate components (heat sink alignment), and there is a high likelihood that incorrect wire routing could occur, resulting in frequent failures. This matches the scale criteria for occurrence level 4, which includes 'Process step known to have frequent failures'.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","The process step involves attaching antenna cables, but it does not explicitly state that wire routing or heat sink alignment are inspected or verified. Therefore, there is a moderate likelihood that the failure will go undetected until after installation, matching the scale criteria for detection level 2.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+28,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Missing or damaged ESD strap resistance check,Increased risk of electrical shock or damage to sensitive electronics during the manufacturing process.,4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The effect of this failure mode is a loss or degradation of primary functions, specifically the increased risk of electrical shock or damage to sensitive electronics. This could potentially lead to product performance issues that may not be immediately apparent but could have significant consequences for safety and reliability. Therefore, a severity rating of 4 is assigned, as it falls into the category of 'Loss or degradation of primary functions', which corresponds to a severity rating of 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of missing or damaged ESD strap resistance check is considered moderate in terms of likelihood. The process step involved is installing a WiFi module, and while it's possible that the check may be neglected or not performed correctly, it's not extremely rare or unlikely to occur. Therefore, an occurrence rating of 3 is assigned, as it falls into the category of 'Failures occasionally occur' or 'Moderate: Failures occasionally occur or have occurred on similar product'.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The likelihood of detecting this failure mode before it reaches the customer is considered low to moderate. The detection criteria for this process step are not explicitly stated, but based on industry standards and best practices, it's likely that some level of quality control or inspection will be performed during installation. However, if the ESD strap resistance check is neglected or not performed correctly, it may go undetected until later stages of production or even after the product has been shipped to the customer. Therefore, a detection rating of 2 is assigned, as it falls into the category of 'Defect will most likely be detected in the process' but with some uncertainty and potential for latent defects.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+29,"Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.","Install WiFi Module
+Insert M.2 WiFi card into slot E. Secure with
+1x M2 screw. Snap antenna cables (Main &
+Aux) onto connectors.",Incorrect or missing screws,"Structural integrity issues, potentially affecting device performance and overall quality.",4,3,3,36,HIGH,YES,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of incorrect or missing screws can lead to structural integrity issues, which can affect device performance and overall quality. This is a moderate severity rating because it may result in a loss or degradation of primary functions, as the device may not function properly due to the screw issue. However, it does not necessarily mean that the device will be completely unusable or require major repair. Therefore, this rating falls under the 4 category for manufacturing_process.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is moderately likely to occur because the process step of securing the M.2 WiFi card with a screw involves a single operation that can be prone to errors if not done correctly. The likelihood of this failure occurring is moderate, as it may happen occasionally but not frequently enough to be considered high-occurrence.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating for this failure mode is moderate because the process involves a semi-qualitative step (Snap antenna cables onto connectors) that may not always detect the missing or incorrect screw. However, it also involves a semi-quantitative step (semi-qualitative: >60%), which suggests that some defects may be detected in the process. Therefore, this rating falls under the moderate category for detection.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+30,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",ESD Damage to Motherboard Assembly,"Potential damage to sensitive electronic components, affecting product performance and potentially requiring costly rework or replacement.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of ESD damage to motherboard assembly has a potential impact on product performance, specifically affecting sensitive electronic components. This could lead to costly rework or replacement, which aligns with the severity criteria for rating 4 (loss or degradation of primary functions or failure to meet product specification).
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The likelihood of ESD damage occurring is moderate, as it can happen during the installation process. However, the occurrence description suggests that failures are occasionally occurring or have occurred on similar products, which aligns with the occurrence criteria for rating 3 (moderate: Failures occasionally occur or have occurred on similar product).
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The failure mode is likely to be detected in the process, as it involves a visible defect (ESD damage) that can be identified during assembly. However, the detection description suggests that there may be a high likelihood that the defect will not be detected in time to prevent the failure effect, which aligns with the detection criteria for rating 2 (good: Defect will most likely be detected in the process).
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+31,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Incorrect I/O Shield Alignment,"Reduced product performance due to compromised electrical connections between the motherboard and chassis, and potentially causing system instability or failure.",3,3,2,18,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"The effect on product performance is a loss or degradation of primary functions, as compromised electrical connections between the motherboard and chassis can cause system instability or failure. This would lead to reduced product performance, but not a total loss of all functions. Additionally, the manufacturing process impact could be scrap >10% of production output due to potential yield impact which may require rework.
+
+Criteria for SEVERITY=3: Loss or degradation of secondary functions or reduced reliability but remains within specification.","The failure mode is moderately likely, as it occurs occasionally on similar products or has occurred in similar processes. The occurrence over time suggests a moderate frequency, but not extremely high.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The defect may not be detected in the process, as it requires visual inspection of I/O shield alignment during installation. While the semi-quantitative detection percentage is >60%, which indicates good detection rate, there is still a possibility that the defect will go undetected until after assembly, which might lead to customer issues.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+32,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Failure to Install Standoff Screws,"Potential damage to the chassis or motherboard assembly, affecting product stability and potentially requiring rework or replacement.",4,4,2,32,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure to install standoff screws has a moderate impact on product performance, as it can cause potential damage to the chassis or motherboard assembly. This could result in reduced product stability and may require rework or replacement. Although it's not a total loss of functions, it still affects the overall functionality of the product.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is considered high because it involves a process step that can have frequent failures (e.g., screws may strip or get lost). The description suggests that this is a known issue, indicating that the process step is prone to errors.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","The failure mode has a moderate detection rate because it involves a visual inspection of the standoff screws. While this might not be immediately apparent, the quality control team may still detect issues during assembly or before shipping. The fact that the defect is not verified or is not verifiable (special process) adds to the uncertainty.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+33,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Insufficient ESD Protection on Equipment,"Risk of ESD damage to sensitive components during handling, potentially resulting in costly rework or replacement and disrupting production processes.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode is rated as severity level 4 because it can result in loss or degradation of primary functions (i.e., damage to sensitive components) which would lead to a significant impact on product performance. Additionally, the potential for costly rework or replacement and disruption of production processes suggests that the severity of this effect could be substantial.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is rated as occurrence level 3 because it is described as an occasional occurrence (i.e., 'frequent failures') which indicates a moderate likelihood of the failure occurring. However, the specific context and process details suggest that this could be a relatively rare but significant issue if not properly addressed.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","This failure mode is rated as detection level 2 because it suggests that there may be limited to no opportunity for visual inspection or testing of the ESD protection on equipment. This implies that detecting this failure before it reaches the customer could be challenging, but not impossible.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+34,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Misaligned Heatsink with Board,"Reduced heat dissipation efficiency, potentially causing system overheating and affecting product performance.",4,3,3,36,HIGH,YES,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The misaligned heatsink with board will lead to reduced heat dissipation efficiency, potentially causing system overheating and affecting product performance. This is a moderate severity effect because it impacts the primary function of the product (heat dissipation) but does not result in total loss of all functions or production line shutdown.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of misaligned heatsink with board is considered moderate in terms of occurrence likelihood. Although it may occur frequently, especially if the I/O shield alignment is not verified during installation, the overall frequency of such failures is unlikely to be very high.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection likelihood for this failure mode is moderate. Given that the defect will likely manifest as reduced heat dissipation efficiency and potentially cause system overheating, it is reasonable to assume that it would not go undetected during normal manufacturing processes. However, if special testing procedures are not employed, there may be a higher chance of detecting the issue late in the production process.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+35,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Gap Between Chassis and Motherboard Assembly Exceeding Allowable Limit,"Potential for electrical connections to be compromised or made unstable due to excessive gap between chassis and motherboard assembly, leading to reduced product performance.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode has a potential impact on product performance, specifically reducing it. Although electrical connections may be compromised or made unstable, this is likely to be within specification and not result in total loss of primary functions. However, the risk still exists for reduced reliability, and scrap rates could be affected if the issue is not addressed.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is likely to occur occasionally due to human error or improper assembly. The operation involves multiple steps, including placing the motherboard assembly into the chassis, verifying I/O shield alignment, and installing standoff screws. If these steps are not performed correctly, it could lead to a gap exceeding the allowable limit.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection of this failure mode is moderate due to the semi-quantitative nature of the process. The I/O shield alignment step may help detect minor issues, but if the issue persists, it could be a more significant problem. However, since it's not explicitly stated that the defect will not be detected in time to prevent the failure effect, a detection rating of 2 is assigned.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+36,"Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.","Chassis Integration
+Place motherboard assembly into the
+bottom chassis. Verify I/O shield alignment.
+Install 6x standoff screws.",Failure to Verify Wire Routing,"Potential electrical connections to be compromised due to improper wire routing, leading to reduced product performance and potentially causing system instability or failure.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The potential electrical connections to be compromised due to improper wire routing could lead to loss or degradation of primary functions, as it may affect the overall system performance. This scenario is more likely than a total loss of all functions but still significant enough to warrant a severity rating of 4.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode of 'Failure to Verify Wire Routing' suggests that the wire routing issue may occur occasionally or have occurred on similar products, indicating moderate likelihood of occurrence. This is not an extremely high risk, but it's still possible enough to warrant a rating of 3.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While proper verification of I/O shield alignment and wire routing might be performed during the process, there's still a possibility that the issue may not be detected in time to prevent the failure effect. The detection likelihood is moderate, as it depends on human inspection and potential oversight.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+37,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",ESD Damage to Device,"Total loss of all functions - primary and secondary or failure to meet Regulatory requirements. The device may suffer from permanent damage due to improper grounding, leading to a complete failure.",5,5,1,25,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"This rating is assigned because ESD damage can result in permanent damage to the device, leading to a complete failure and potentially violating Regulatory requirements. The impact of this effect on product performance is total loss of all functions, which matches the severity scale criteria.
+
+Criteria for SEVERITY=5: Total loss of all functions - primary and secondary or failure to meet Regulatory requirements.","This rating is assigned because ESD damage can occur due to improper grounding during the firmware flashing process. This is considered a very high likelihood event as it can happen even with proper precautions and equipment if the individual handling the device is not careful.
+
+Criteria for OCCURRENCE=5: Very high: Failures are certain to occur.","This rating is assigned because ESD damage can be difficult to detect before it reaches the customer. By the time it's detected, the damage may already have occurred, making detection before delivery highly unlikely. Special process testing and inspection may not catch this type of defect.
+
+Criteria for DETECTION=1: Immediately apparent (100% failure mode detection in manufacturing)"
+38,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Incorrect Script Execution,"Loss or degradation of primary functions or failure to meet product specification. If the script flash_v2.0.bat is executed incorrectly, it may cause issues with the firmware update, resulting in reduced functionality or non-compliance with specifications.",4,3,3,36,HIGH,YES,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode affects product performance by potentially causing loss or degradation of primary functions. The incorrect script execution may result in reduced functionality or non-compliance with specifications, which are critical to the product's overall performance. However, it does not pose an immediate risk to the process line shutdown or 100% of production output being scrapped.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The failure mode is likely to occur occasionally, as the script flash_v2.0.bat may have frequent execution errors due to various reasons such as user input mistakes or software bugs. However, it is not certain that failures will occur very frequently.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While the effect of incorrect script execution is significant, the detection of this failure mode before reaching the customer is still possible with careful testing and quality control measures. The fact that some defects may not be detected in the process suggests a moderate likelihood of detection.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+39,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Poor Connection between Programming Cable and JTAG Port,"Loss or degradation of secondary functions or reduced reliability but remains within specification. A loose connection could lead to inconsistent firmware updates, affecting the overall performance and reliability of the device.",3,2,3,18,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"A loose connection could lead to inconsistent firmware updates, affecting the overall performance and reliability of the device. This would result in loss or degradation of secondary functions, but remains within specification. The impact on product performance is moderate.
+
+Criteria for SEVERITY=3: Loss or degradation of secondary functions or reduced reliability but remains within specification.","Failures are unlikely due to human error correction (e.g., verifying connection) during firmware flashing process. However, the process involves a number of steps where a loose connection could occur, increasing the likelihood of occurrence.
+
+Criteria for OCCURRENCE=2: Low: Failures are unlikely.","While inconsistent firmware updates can be detected through visual inspection or testing, it may not be immediately apparent to the operator during the flashing process. The semi-quantitative detection value suggests that more than 60% of failures will go undetected until after the device is shipped.
+
+Criteria for DETECTION=3: Moderate (50% failure mode detection in manufacturing)"
+40,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Inadequate ESD Strap Resistance,"Minor cosmetic or usability impact but remains within specification. If the ESD strap resistance is not adequate, it may cause minor damage to the device, resulting in a slight decrease in performance and appearance.",2,2,4,16,LOW,NO,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"Minor cosmetic or usability impact but remains within specification. This rating matches the scale because the failure mode does not directly affect product performance, and instead only causes minor damage to the device. The effect is also described as 'minor' in the potential effect section of the PFMEA.
+
+Criteria for SEVERITY=2: Minor cosmetic or usability impact but remains within specification.","The qualitative description indicates that failures are low. This rating matches the scale because it suggests that the failure mode is unlikely to occur frequently, which aligns with a likelihood of occurrence rating of 2. The use of 'low' implies that the probability of occurrence is not extremely high.
+
+Criteria for OCCURRENCE=2: Low: Failures are unlikely.","The qualitative description indicates that defects may not be detected in the process. This rating matches the scale because it suggests that there is a moderate likelihood that the defect will not be detected, which aligns with a detection likelihood of 4. The use of 'may' implies that while detection is possible, it is not guaranteed.
+
+Criteria for DETECTION=4: Poor (25% failure mode detection in manufacturing)"
+41,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Heatsink Misalignment,"Minor cosmetic or usability impact but remains within specification. A misaligned heatsink could lead to reduced airflow and increased temperatures, potentially affecting the lifespan of the device and its overall performance.",2,3,4,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The potential effect of a misaligned heatsink is a minor cosmetic or usability impact, which means it will not significantly affect product performance. The severity rating is 2, as the failure mode has some impact on the product's overall performance but does not pose an immediate risk to safety or functionality.
+
+Criteria for SEVERITY=2: Minor cosmetic or usability impact but remains within specification.","The likelihood of a misaligned heatsink occurring during firmware flashing is moderate. This step involves several complex operations, and a single misalignment could potentially happen. However, the occurrence rating is not the highest because the failure mode is not extremely common or inevitable.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating is 4 because a misaligned heatsink may be difficult to detect during firmware flashing. Although a LED indicator (Green) confirms the process completion, it does not guarantee that all components are correctly aligned. The failure mode might not be immediately apparent, and further testing or inspection would be necessary to verify the accuracy of the heatsink alignment.
+
+Criteria for DETECTION=4: Poor (25% failure mode detection in manufacturing)"
+42,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Gap Check Failure,"Loss or degradation of secondary functions or reduced reliability but remains within specification. If the gap check fails, it may cause issues with the device's functionality and could lead to rework or scrap due to inadequate assembly.",3,3,2,18,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode is rated as severity level 3 because the potential effect on product performance is a loss or degradation of secondary functions, which is considered a moderate impact. This would result in reduced reliability but still within specification, and may require rework or scrap due to inadequate assembly. The manufacturing process would be impacted by scrap >10% of production output, aligning with severity level 3.
+
+Criteria for SEVERITY=3: Loss or degradation of secondary functions or reduced reliability but remains within specification.","The occurrence rating is 3 because the qualitative description indicates that failures are occasionally occurring on similar products or have occurred in the past. This suggests a moderate likelihood of failure, which aligns with an occurrence rating of 3.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The detection rating is 2 because the qualitative description does not indicate high likelihood that the defect will be detected in time to prevent the failure effect. However, it also does not suggest a low likelihood of detection. Therefore, a moderate semi-quantitative value of >60% was chosen, indicating that the defect may not be detected in the process but is likely to be detected using visual criteria.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+43,"Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).","Firmware Flashing
+Connect programming cable to JTAG port.
+Run script flash_v2.0.bat. Wait for ""PASS""
+LED (Green).",Torque Driver Issues,"Minor cosmetic or usability impact but remains within specification. If the torque driver is not calibrated correctly, it may lead to minor misalignment of components, affecting the overall appearance and performance of the device.",2,3,4,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"Minor cosmetic or usability impact but remains within specification. According to the severity scale, a rating of 2 corresponds to a product_performance effect of 'Minor cosmetic or usability impact but remains within specification.' and a manufacturing_process effect of 'Scrap <10% of production output or process downtime or yield impact which may require rework.' The described effect matches this criterion, indicating that the torque driver issues will have a minor impact on product performance.
+
+Criteria for SEVERITY=2: Minor cosmetic or usability impact but remains within specification.","Failures occasionally occur or have occurred on similar product. According to the occurrence scale, a rating of 3 corresponds to a qualitative description of 'Moderate: Failures occasionally occur or have occurred on similar product.' This matches the likelihood of failure occurring for the torque driver issues, as it suggests that failures are unlikely but can and do occur.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","Defect may not be detected in the process. According to the detection scale, a rating of 4 corresponds to a semi-quantitative value of '>60%' for failure mode detection. The described effect suggests that the defect may not be detected during the manufacturing process, which aligns with this criterion.
+
+Criteria for DETECTION=4: Poor (25% failure mode detection in manufacturing)"
+44,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).",ESD damage to the unit due to poor strap resistance or improper strap installation.,"Total loss of all functions - primary and secondary, requiring rework or replacement.",5,5,1,25,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"Total loss of all functions - primary and secondary, requiring rework or replacement. This severity rating is assigned because the effect on product performance is catastrophic, resulting in a complete failure of the unit. The impact on manufacturing process would also be severe, with potentially 100% of production output being scrapped.
+
+Criteria for SEVERITY=5: Total loss of all functions - primary and secondary or failure to meet Regulatory requirements.","Very high: Failures are certain to occur. ESD damage can easily happen due to poor strap resistance or improper strap installation, making this failure mode very likely to occur. The fact that it's related to a process step (Functional Test) with multiple steps increases the likelihood of human error or equipment malfunction.
+
+Criteria for OCCURRENCE=5: Very high: Failures are certain to occur.","Immediately apparent: Defects in ESD protection are usually easily detectable during manufacturing inspection, especially if they affect the unit's functionality. The fact that this is a latent defect (not immediately apparent) would make it challenging to identify and prevent before shipment. Therefore, detection is considered very low.
+
+Criteria for DETECTION=1: Immediately apparent (100% failure mode detection in manufacturing)"
+45,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).",Inaccurate visual inspection of bent pins due to inadequate lighting or observer skill.,"Loss or degradation of primary functions, resulting in a product that does not meet specification.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This rating matches the severity scale because inaccurate visual inspection of bent pins due to inadequate lighting or observer skill can result in a product that does not meet specification. However, it is unlikely to cause total loss of all functions (rating 5). While this could lead to a significant issue, the impact on product performance is not catastrophic, but rather a degradation or loss of primary function.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This rating matches the occurrence scale because it is likely that failures due to inaccurate visual inspection will occur occasionally (rating 3). The process step involves inspecting bent pins, which can be prone to human error. However, the likelihood of failure is not extremely high or low.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","This rating matches the detection scale because it is likely that defects due to inaccurate visual inspection will not be detected in time to prevent the failure effect (rating 2). While some defects may be caught during testing, others may go undetected until after implant. The process involves a visual inspection, which can be subjective and prone to human error.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+46,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Incorrect torque on the screws, causing damage to the unit's structural integrity.",Scrap >30% of production output due to compromised unit reliability.,4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.8,"This failure mode could lead to a loss or degradation of primary functions, as the unit's structural integrity is compromised. This would require scrap >30% of production output due to compromised unit reliability. The severity rating of 4 reflects this potential impact on product performance.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is considered moderate in terms of likelihood, as incorrect torque on screws can occur occasionally during manufacturing. However, it may have occurred on similar products in the past, indicating a moderate occurrence rate. The occurrence rating of 3 reflects this assessment.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","While detecting an incorrect torque on screws might be challenging, especially if it is not visually apparent, the failure would likely be detected during functional testing. However, the likelihood of detection before reaching the customer is relatively low due to the potential for latent defects or special processes involved. The detection rating of 2 reflects this assessment.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+47,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Insufficient gap check between the heatsink and the board, resulting in thermal issues.","Reduced product performance due to increased temperature, potentially affecting secondary functions.",4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"The failure mode of insufficient gap check between the heatsink and the board results in reduced product performance due to increased temperature, potentially affecting secondary functions. This severity rating is assigned because the effect on product performance is a loss or degradation of primary functions (secondary functions being affected). According to the provided scale criteria, a severity rating of 4 corresponds to this level of impact.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","The qualitative description for occurrence is 'Moderate: Failures occasionally occur or have occurred on similar product.' This indicates that failures are unlikely but possible. Therefore, the occurrence rating is assigned a value of 3, which corresponds to this level of likelihood.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","The qualitative description for detection states 'Defect may not be detected in the process.' This suggests that there is some risk of the defect going undetected until it reaches the customer. However, a detection rating of 2 corresponds to a semi-quantitative value of >60%, which indicates that detection is possible but not guaranteed. Therefore, this detection rating reflects the moderate level of detectability.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+48,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Poor wire routing or contact between the antenna connectors and the PCB, leading to connectivity issues.",Scrap >10% of production output due to issues with wireless connectivity or signal strength.,4,3,2,24,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"This failure mode is rated as severity level 4 because it will result in loss or degradation of primary functions, specifically wireless connectivity. This will impact the overall performance of the product and may lead to scrap production output.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode is rated as occurrence level 3 because it requires poor wire routing or contact between the antenna connectors and the PCB, indicating a moderate likelihood that failures will occur. This suggests that the process step involved in this failure mode may have frequent failures.
+
+Criteria for OCCURRENCE=3: Moderate: Failures occasionally occur or have occurred on similar product.","This failure mode is rated as detection level 2 because there is no mention of any special testing or verification processes that would detect this issue before it reaches the customer. However, since the WiFi signal strength needs to be checked (> -60dBm), it's likely that a good percentage of failures will be detected during production testing.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+49,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).",Failure to detect a faulty I/O port or connector issue during the visual inspection.,"Loss or degradation of primary functions, requiring rework or replacement.",4,4,2,32,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",0.6,"The failure to detect a faulty I/O port or connector issue during visual inspection could lead to loss or degradation of primary functions, requiring rework or replacement. This impact falls under product_performance category as it affects the overall functionality of the unit. Manufacturing_process rating does not fit here since the impact is more related to product performance rather than process line shutdown.
+
+Criteria for SEVERITY=4: Loss or degradation of primary functions or failure to meet product specification.","This failure mode can be considered high because a faulty I/O port or connector issue could occur frequently if proper inspection and testing procedures are not followed. Additionally, the fact that it's related to a visual inspection step suggests that this failure mode is more likely to happen often.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","The detection of a faulty I/O port or connector issue during visual inspection may be moderate because while human inspectors can inspect for these issues, they might not always catch them. However, in many cases, these types of defects are tested using non-visual criteria (e.g., electrical testing), which would provide better detection rates. Thus, we assign a detection rating that reflects the potential for some defect detection but acknowledges the limitations of visual inspection alone.
+
+Criteria for DETECTION=2: Good (75% failure mode detection in manufacturing)"
+50,"Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Functional Test
+Power on unit. Verify boot sequence on test
+monitor. Check fan spin and WiFi signal
+strength (> -60dBm).","Inadequate testing of the unit's boot sequence, causing it to fail to power on or boot slowly.","Total loss of all functions - primary and secondary, requiring rework or replacement.",5,4,1,20,MEDIUM,MAYBE,"ESD Check: Strap resistance < 10MΩ
+Visual: No bent pins > 5 degrees, Weight: 0.50g ± 0.05g
+Coverage: 100% of die area covered
+Thickness: 0.2mm ± 0.02mm, Torque: 1.2Nm ± 0.1Nm
+Visual: Heatsink flush with board
+Gap Check: < 0.1mm gap, Tactile: Audible ""click"" upon insertion
+Visual: Wire routing must not touch heatsink
+fins, Torque: 0.3Nm ± 0.05Nm
+Connection: Antenna connectors must
+rotate freely, Visual: I/O ports centered in cutouts
+Hardware: All 6 screws present and seated, Software: Verify Checksum matches release
+notes
+Indicator: Green LED = Success, Red = Fail, Power: Current draw < 1.5A
+Functional: Boot to OS in < 15 seconds",1.0,"Total loss of all functions - primary and secondary, requiring rework or replacement is a critical consequence that would have significant impact on product performance. The fact that it requires rework or replacement indicates a high level of severity.
+
+Criteria for SEVERITY=5: Total loss of all functions - primary and secondary or failure to meet Regulatory requirements.","Failures are certain to occur due to inadequate testing of the unit's boot sequence, indicating a very high likelihood of occurrence. However, since this is a process step and not an inherent property of the product itself, it falls into the category of 'process step known to have frequent failures', which corresponds to rating 4.
+
+Criteria for OCCURRENCE=4: High: Process step known to have frequent failures.","Since the failure would be detected immediately after the unit fails to power on or boot slowly due to the visual criteria of the test monitor, it is very likely that the defect will not be detected in time to prevent the failure effect. The fact that the product would fail to meet regulatory requirements and require rework or replacement indicates a low likelihood of detection.
+
+Criteria for DETECTION=1: Immediately apparent (100% failure mode detection in manufacturing)"
