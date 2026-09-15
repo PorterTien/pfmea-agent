@@ -54,3 +54,8 @@ logs/
 
 
 
+
+# Kept: source PDFs and demo analysis output (not regenerable)
+!backend/uploads/
+!backend/uploads/*.pdf
+!backend/pfmea.db
